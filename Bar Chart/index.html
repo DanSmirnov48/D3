@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="graph-container">
+        <h1 id="title">United States GDP</h1>
+        <div class="tooltip"></div>
+    </div>
+    
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="index.js"></script>
+
+    <style>
+        body{
+            background-color: #708090;
+        }
+        h1{
+            font-size: 40px;
+            font-weight: 500;
+            text-align: center;
+        }
+        #tooltip {
+            text-align: center;
+            background-color: #A5C2E0;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+            border-radius: 2px;
+            padding: 10px;
+            width: 150px;
+            pointer-events: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+        svg {
+            display: block;
+            margin: 0 auto;
+            padding-top: .5rem;
+        }
+        .graph-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            border: 1px solid #00000042;
+            width: 1050px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+        }       
+    </style>
+</body>
+</html>

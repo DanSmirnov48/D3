@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="scatterplot-container">
+      <h1 id="title">Doping in Professional Bicycle Racing</h1>
+      <div id="legend"></div>
+    </div>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="index.js"></script>
+
+    <style>
+      #tooltip {
+        text-align: left;
+        font-size: 14px;
+        font-weight: 500;
+        background-color: #a5c2e0;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+        border-radius: 5px;
+        padding: 15px;
+        width: auto;
+        pointer-events: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+      }
+      #scatterplot-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      h1 {
+        margin: 0;
+      }
+      svg {
+        display: block;
+        margin: 0 auto;
+      }
+      #legend {
+        text-align: center;
+        font-size: 17px;
+        margin-top: 10px;
+      }
+    </style>
+  </body>
+</html>
